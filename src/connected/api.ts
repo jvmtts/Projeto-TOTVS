@@ -1,3 +1,5 @@
+import { validateDeploymentApi } from "../config/deployment";
+
 export type Person = { id: number; nome: string; tipo: "CLIENTE" | "FUNCIONARIO"; idade: number | null; empresa: string | null; cnpj: string | null; cargo: string | null; perfil: string | null };
 export type PersonInput = { nome: string; empresa?: string; cnpj?: string; cargo?: string; perfil?: string };
 export type Report = { id: number; reuniaoId: number; texto: string; criadoEm: string | null; atual: boolean };
@@ -14,6 +16,11 @@ export class ApiError extends Error {
 }
 
 export async function request<T>(path: string, options: { method?: string; body?: unknown; signal?: AbortSignal } = {}): Promise<T> {
+  const localHost = ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
+  if (import.meta.env.PROD && !localHost) {
+    try { validateDeploymentApi(import.meta.env.VITE_API_URL); }
+    catch { throw new ApiError("A conexão com o servidor de reuniões ainda não foi configurada nesta publicação.", 503); }
+  }
   const controller = new AbortController();
   const abort = () => controller.abort();
   options.signal?.addEventListener("abort", abort, { once: true });
