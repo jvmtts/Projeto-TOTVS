@@ -5,7 +5,7 @@ import { validateDeploymentApi } from "./src/config/deployment.ts";
 
 export default defineConfig(({ mode, command }) => {
   const env = loadEnv(mode, ".", ["ARION_", "VITE_", "VERCEL"]);
-  if (command === "build" && env.VERCEL === "1") {
+  if (command === "build" && env.VERCEL === "1" && env.VITE_API_URL && env.VITE_API_URL.trim().replace(/\/$/, "") !== "/api") {
     try { validateDeploymentApi(env.VITE_API_URL); }
     catch (error) { console.warn(`[Árion] ${error instanceof Error ? error.message : "Configuração da API pendente."} O frontend será publicado com a conexão pendente.`); }
   }

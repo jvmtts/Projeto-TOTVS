@@ -43,10 +43,10 @@ A Vercel recebe o frontend. A API Java deve estar publicada separadamente e resp
 1. Publique `Challenges_TOTVS_DDD` em um serviço que execute seu `Dockerfile`, com armazenamento persistente ou o Oracle configurado. Consulte o README do backend.
 2. No backend, defina `ARION_CORS_ORIGINS=https://projeto-totvs-zeta.vercel.app` e `SERVER_ADDRESS=0.0.0.0`.
 3. Na Vercel, em Settings → Environment Variables, defina `VITE_API_URL` com a URL HTTPS real do backend, incluindo `/api` no final. A variável é um endereço público; não coloque chaves de IA nela.
-4. Aplique a variável aos ambientes desejados e faça um novo deploy. Endereço ausente, HTTP, localhost ou endereço privado gera um aviso no build. A publicação do frontend continua; a interface informa que a conexão está pendente e aguarda a configuração de uma API pública HTTPS.
+4. Aplique a variável aos ambientes desejados e faça um novo deploy. Endereço ausente, HTTP, localhost ou endereço privado gera um aviso no build. A publicação do frontend continua. Sem VITE_API_URL ou com o valor /api, a versão pública usa uma cópia de consulta dos quatro exemplos anteriores, identificada como demonstração. Uma API HTTPS configurada explicitamente continua sendo a fonte dos dados, sem fallback em falhas de conexão.
 5. Confirme o indicador Conectado e consulte as reuniões. Os registros do H2 local não são enviados automaticamente à hospedagem. Os exemplos recuperados estão em `database/legacy` no backend e precisam de uma importação no banco de destino.
 
-O projeto usa rotas com `#`; a página inicial de produção é `https://projeto-totvs-zeta.vercel.app/#/reunioes`. Não há rewrite para um backend fictício nem fallback para exemplos quando a conexão falha.
+O projeto usa rotas com `#`; a página inicial de produção é `https://projeto-totvs-zeta.vercel.app/#/reunioes`. A cópia em src/data/published-workspace.json contém somente os quatro exemplos fictícios autorizados, seus sete participantes e quatro resumos anteriores. Não possui credenciais. O modo de consulta permite busca, filtros, históricos, exportação e notas pessoais no navegador; cadastros, edição, exclusão e geração de IA permanecem exclusivos da API Java.
 
 ## Verificar
 

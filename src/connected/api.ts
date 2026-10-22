@@ -1,4 +1,5 @@
 import { validateDeploymentApi } from "../config/deployment";
+import { readPublishedData } from "./published";
 
 export type Person = { id: number; nome: string; tipo: "CLIENTE" | "FUNCIONARIO"; idade: number | null; empresa: string | null; cnpj: string | null; cargo: string | null; perfil: string | null };
 export type PersonInput = { nome: string; empresa?: string; cnpj?: string; cargo?: string; perfil?: string };
@@ -7,7 +8,7 @@ export type Meeting = { id: number; titulo: string; data: string; participantes:
 export type MeetingDetail = Omit<Meeting, "relatorios"> & { transcricao: string; relatorios: Report[] };
 export type MeetingInput = { titulo: string; data: string; transcricao: string; participantes: number[] };
 export type Page<T> = { items: T[]; total: number; page: number; size: number; pages: number };
-export type ApiStatus = { status: string; geracaoDisponivel: boolean; banco: string };
+export type ApiStatus = { status: string; geracaoDisponivel: boolean; banco: string; somenteLeitura?: boolean };
 export type ReportItem = { relatorio: Report; titulo: string; data: string };
 export const apiBase = (import.meta.env.VITE_API_URL || "/api").replace(/\/$/, "");
 
@@ -17,6 +18,12 @@ export class ApiError extends Error {
 
 export async function request<T>(path: string, options: { method?: string; body?: unknown; signal?: AbortSignal } = {}): Promise<T> {
   const localHost = ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
+  const configuredApi = import.meta.env.VITE_API_URL?.trim();
+  if (import.meta.env.PROD && !localHost && (!configuredApi || configuredApi === "/api")) {
+    if (options.signal?.aborted) throw new DOMException("Consulta cancelada.", "AbortError");
+    if ((options.method ?? "GET").toUpperCase() !== "GET") throw new ApiError("Esta demonstração permite consultar os exemplos. Cadastros e alterações precisam da API Java hospedada.", 405);
+    return readPublishedData<T>(path);
+  }
   if (import.meta.env.PROD && !localHost) {
     try { validateDeploymentApi(import.meta.env.VITE_API_URL); }
     catch { throw new ApiError("A conexão com o servidor de reuniões ainda não foi configurada nesta publicação.", 503); }

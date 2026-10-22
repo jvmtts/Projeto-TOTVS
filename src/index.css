@@ -111,3 +111,5 @@ textarea { width: 100%; min-width: 0; padding: 17px; border: 1px solid #dce6ec; 
 .page-heading p, .meeting-cell small, .table-head, .meeting-row>time, .page-caption, .pagination, .section-heading>span, .field-hint, .participant-choice small, .record-number, .detail-meta, .paper-label, .paper-footer, .participant-link small, .notes-panel>p, .notes-panel>div>span, .directory-toolbar>span, .directory-person small, .profile-facts>div>span, .staff-card>small, .report-entry p, .report-entry>time, .app-footer { color: #607c8d; }
 .markdown, .transcript-document>p { color: #506d7e; }
 
+
+.published-notice { margin-bottom: 28px; padding: 14px 18px; border: 1px solid #cbdfe5; border-radius: 8px; color: #426674; background: #edf5f7; font-size: 13px; line-height: 1.6; }

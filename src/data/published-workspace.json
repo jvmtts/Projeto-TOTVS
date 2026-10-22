@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "source": "Exemplos fictícios recuperados da versão anterior do Árion",
+  "people": [
+    {
+      "id": 4,
+      "nome": "André Martins",
+      "tipo": "CLIENTE",
+      "idade": null,
+      "empresa": "Vértice Indústria",
+      "cnpj": null,
+      "cargo": null,
+      "perfil": "Cliente demonstração"
+    },
+    {
+      "id": 3,
+      "nome": "Beatriz Santos",
+      "tipo": "FUNCIONARIO",
+      "idade": null,
+      "empresa": null,
+      "cnpj": null,
+      "cargo": "Gerente comercial",
+      "perfil": "Gestão"
+    },
+    {
+      "id": 5,
+      "nome": "Clara Ribeiro",
+      "tipo": "CLIENTE",
+      "idade": null,
+      "empresa": "Casa Norte",
+      "cnpj": null,
+      "cargo": null,
+      "perfil": "Cliente demonstração"
+    },
+    {
+      "id": 7,
+      "nome": "Luiza Rocha",
+      "tipo": "CLIENTE",
+      "idade": null,
+      "empresa": "Horizonte Serviços",
+      "cnpj": null,
+      "cargo": null,
+      "perfil": "Cliente demonstração"
+    },
+    {
+      "id": 1,
+      "nome": "Marina Costa",
+      "tipo": "FUNCIONARIO",
+      "idade": null,
+      "empresa": null,
+      "cnpj": null,
+      "cargo": "Executiva de contas",
+      "perfil": "Comercial"
+    },
+    {
+      "id": 6,
+      "nome": "Pedro Almeida",
+      "tipo": "CLIENTE",
+      "idade": null,
+      "empresa": "Alvorada Logística",
+      "cnpj": null,
+      "cargo": null,
+      "perfil": "Cliente demonstração"
+    },
+    {
+      "id": 2,
+      "nome": "Rafael Lima",
+      "tipo": "FUNCIONARIO",
+      "idade": null,
+      "empresa": null,
+      "cnpj": null,
+      "cargo": "Customer Success",
+      "perfil": "Relacionamento"
+    }
+  ],
+  "meetings": [
+    {
+      "id": 1,
+      "titulo": "[Demonstração] Revisão da operação e suporte",
+      "data": "2026-09-28",
+      "transcricao": "Rafael Lima: André, queria começar pelo fechamento de pedidos. O que mudou desde a nossa última conversa?\n\nAndré Martins: O sistema continua lento no horário de pico. A equipe precisa esperar para concluir os pedidos, e o suporte ainda não nos deu um prazo para resolver.\n\nRafael Lima: Vou centralizar os chamados e pedir uma avaliação técnica com os horários em que isso acontece. Vocês conseguem compartilhar dois exemplos de pedidos?\n\nAndré Martins: Consigo enviar hoje. Mas precisamos de uma resposta concreta. A diretoria já perguntou sobre cancelar o contrato se a operação continuar assim.\n\nRafael Lima: Entendi a urgência. Até terça-feira retorno com o responsável técnico e um plano de atendimento. Vou registrar esse compromisso no nosso acompanhamento.\n\nAndré Martins: Combinado. Ter um responsável e uma data já ajuda a alinhar a expectativa da equipe.",
+      "participantes": [
+        {
+          "id": 4,
+          "nome": "André Martins",
+          "tipo": "CLIENTE",
+          "idade": null,
+          "empresa": "Vértice Indústria",
+          "cnpj": null,
+          "cargo": null,
+          "perfil": "Cliente demonstração"
+        },
+        {
+          "id": 2,
+          "nome": "Rafael Lima",
+          "tipo": "FUNCIONARIO",
+          "idade": null,
+          "empresa": null,
+          "cnpj": null,
+          "cargo": "Customer Success",
+          "perfil": "Relacionamento"
+        }
+      ],
+      "relatorios": [
+        {
+          "id": 1,
+          "reuniaoId": 1,
+          "texto": "# Registro de demonstração importado\n\nConteúdo fictício preservado da versão anterior do Árion. Este resumo não foi gerado pela API de IA.\n\n## Resumo\nAndré relatou lentidão no fechamento de pedidos e demora no retorno do suporte. O problema afeta a operação e entrou na discussão sobre a continuidade do contrato. Rafael ficou de reunir os chamados e alinhar um plano de atendimento antes da próxima conversa.\n\n## Temas\nSuporte, Desempenho\n\n## Próximos passos\n- Consolidar chamados e exemplos de lentidão — Rafael Lima — prazo original: 2026-09-29\n- Alinhar plano de atendimento com a equipe técnica — Rafael Lima — prazo original: 2026-09-30",
+          "criadoEm": "2026-10-22T00:49:16.156984Z",
+          "atual": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "[Demonstração] CRM para a expansão comercial",
+      "data": "2026-09-25",
+      "transcricao": "Marina Costa: Clara, como vocês acompanham as oportunidades hoje?\n\nClara Ribeiro: Estamos satisfeitos com o ERP, mas o comercial cresceu. São oito vendedores usando planilhas diferentes. Queremos conhecer o CRM e centralizar esse histórico.\n\nMarina Costa: Podemos montar uma demonstração com as etapas que vocês já utilizam. Isso ajuda a verificar se o fluxo atende ao time.\n\nClara Ribeiro: Ótimo. Envio as etapas e gostaria de entender o preço para as oito pessoas antes de levar a proposta à diretoria.",
+      "participantes": [
+        {
+          "id": 5,
+          "nome": "Clara Ribeiro",
+          "tipo": "CLIENTE",
+          "idade": null,
+          "empresa": "Casa Norte",
+          "cnpj": null,
+          "cargo": null,
+          "perfil": "Cliente demonstração"
+        },
+        {
+          "id": 1,
+          "nome": "Marina Costa",
+          "tipo": "FUNCIONARIO",
+          "idade": null,
+          "empresa": null,
+          "cnpj": null,
+          "cargo": "Executiva de contas",
+          "perfil": "Comercial"
+        }
+      ],
+      "relatorios": [
+        {
+          "id": 2,
+          "reuniaoId": 2,
+          "texto": "# Registro de demonstração importado\n\nConteúdo fictício preservado da versão anterior do Árion. Este resumo não foi gerado pela API de IA.\n\n## Resumo\nA Casa Norte pretende organizar o acompanhamento de oportunidades em uma única ferramenta. Clara demonstrou interesse em CRM para oito vendedores e pediu uma apresentação com o fluxo de vendas da empresa. A contratação ainda depende da avaliação de escopo e preço.\n\n## Temas\nCRM, Expansão\n\n## Próximos passos\n- Preparar demonstração do CRM para oito vendedores — Marina Costa — prazo original: 2026-09-30",
+          "criadoEm": "2026-10-22T00:49:16.163984Z",
+          "atual": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "[Demonstração] Condições para a renovação",
+      "data": "2026-09-24",
+      "transcricao": "Pedro Almeida: A mensalidade ficou acima do orçamento. Estamos avaliando um concorrente e precisamos entender o que conseguimos ajustar na renovação.\n\nMarina Costa: Vamos revisar os módulos e o uso atual antes de discutir desconto. Assim conseguimos comparar propostas com um escopo equivalente.\n\nPedro Almeida: Faz sentido. Ainda não decidimos mudar. Quero receber as alternativas de preço e prazo para conversar com a diretoria.",
+      "participantes": [
+        {
+          "id": 1,
+          "nome": "Marina Costa",
+          "tipo": "FUNCIONARIO",
+          "idade": null,
+          "empresa": null,
+          "cnpj": null,
+          "cargo": "Executiva de contas",
+          "perfil": "Comercial"
+        },
+        {
+          "id": 6,
+          "nome": "Pedro Almeida",
+          "tipo": "CLIENTE",
+          "idade": null,
+          "empresa": "Alvorada Logística",
+          "cnpj": null,
+          "cargo": null,
+          "perfil": "Cliente demonstração"
+        }
+      ],
+      "relatorios": [
+        {
+          "id": 3,
+          "reuniaoId": 3,
+          "texto": "# Registro de demonstração importado\n\nConteúdo fictício preservado da versão anterior do Árion. Este resumo não foi gerado pela API de IA.\n\n## Resumo\nPedro questionou o custo do contrato e informou que está comparando propostas. Não houve decisão de cancelamento. Marina vai revisar os módulos utilizados e apresentar alternativas comerciais para a renovação.\n\n## Temas\nPreço, Concorrência\n\n## Próximos passos\n- Revisar escopo e condições de renovação — Marina Costa — prazo original: 2026-09-29",
+          "criadoEm": "2026-10-22T00:49:16.165985Z",
+          "atual": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "[Demonstração] Planejamento financeiro e Techfin",
+      "data": "2026-09-22",
+      "transcricao": "Beatriz Santos: Luiza, qual é a principal necessidade do financeiro neste trimestre?\n\nLuiza Rocha: Queremos conhecer o Techfin. Recebemos em prazos longos e a antecipação de recebíveis pode ajudar no fluxo de caixa.\n\nBeatriz Santos: Vou trazer um especialista para explicar as condições. Antes, precisamos entender o perfil e o volume desses recebíveis.\n\nLuiza Rocha: Combinado. Vou separar os dados para avaliarmos as possibilidades na próxima conversa.",
+      "participantes": [
+        {
+          "id": 3,
+          "nome": "Beatriz Santos",
+          "tipo": "FUNCIONARIO",
+          "idade": null,
+          "empresa": null,
+          "cnpj": null,
+          "cargo": "Gerente comercial",
+          "perfil": "Gestão"
+        },
+        {
+          "id": 7,
+          "nome": "Luiza Rocha",
+          "tipo": "CLIENTE",
+          "idade": null,
+          "empresa": "Horizonte Serviços",
+          "cnpj": null,
+          "cargo": null,
+          "perfil": "Cliente demonstração"
+        }
+      ],
+      "relatorios": [
+        {
+          "id": 4,
+          "reuniaoId": 4,
+          "texto": "# Registro de demonstração importado\n\nConteúdo fictício preservado da versão anterior do Árion. Este resumo não foi gerado pela API de IA.\n\n## Resumo\nLuiza pediu informações sobre antecipação de recebíveis para equilibrar o fluxo de caixa. Beatriz vai organizar uma conversa com um especialista após receber o perfil dos recebíveis. A reunião foi exploratória, sem acordo de contratação.\n\n## Temas\nTechfin, Recebíveis\n\n## Próximos passos\n- Organizar conversa com especialista em Techfin — Beatriz Santos — prazo original: 2026-10-01",
+          "criadoEm": "2026-10-22T00:49:16.166983Z",
+          "atual": true
+        }
+      ]
+    }
+  ]
+}

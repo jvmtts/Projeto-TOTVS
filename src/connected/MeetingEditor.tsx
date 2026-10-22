@@ -73,5 +73,7 @@ function ExistingEditor({ id }: { id: string }) {
 
 export default function MeetingEditor() {
   const { id } = useParams();
+  const { status } = useApi();
+  if (status?.somenteLeitura) return <section className="surface"><Empty title="Versão de consulta"><p>Os exemplos estão disponíveis para explorar. Cadastros e alterações dependem da API Java hospedada.</p><Link className="button primary" to="/reunioes">Consultar reuniões</Link></Empty></section>;
   return id ? <ExistingEditor id={id} /> : <EditorForm />;
 }
