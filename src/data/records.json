@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "transcript": "O sistema está muito lento e o suporte demora demais. A diretoria quer cancelar contrato.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 2,
+    "transcript": "Estamos satisfeitos. Agora queremos contratar crm para a equipe comercial.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 3,
+    "transcript": "A mensalidade está muito cara. Já estamos avaliando concorrente no mercado.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 4,
+    "transcript": "Precisamos implantar techfin para ajudar na antecipação de recebíveis.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 5,
+    "transcript": "O projeto travou de novo. A equipe de ti decidiu mudar erp no próximo ano.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 6,
+    "transcript": "A empresa abriu nova filial, vamos precisar comprar licencas do protheus.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 7,
+    "transcript": "Toda vez o suporte demora para resolver. Assim fica difícil, vamos cancelar contrato.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 8,
+    "transcript": "O modulo financeiro roda bem, mas precisamos integrar folha do rh urgente.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 9,
+    "transcript": "Essa lentidão atrapalha muito. Se não melhorar o sistema lento, vamos mudar erp.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 10,
+    "transcript": "Gostamos da ferramenta. Teria como implantar techfin no nosso pacote?",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 11,
+    "transcript": "O custo benefício sumiu, mensalidade cara demais. Estamos avaliando concorrente.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 12,
+    "transcript": "Para o próximo semestre nossa meta é contratar crm para o time de vendas.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 13,
+    "transcript": "Ficamos sem sistema o dia todo e o suporte demora muito. A ideia é cancelar contrato.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 14,
+    "transcript": "Com o crescimento da equipe, precisamos urgente comprar licencas extras.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 15,
+    "transcript": "A interface é ruim e o sistema lento. A chefia já fala em mudar erp.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 16,
+    "transcript": "Tudo funcionando liso. Queria saber o preço para integrar folha de pagamento.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 17,
+    "transcript": "Cobrança indevida de novo e mensalidade cara. Vamos acabar avaliando concorrente.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 18,
+    "transcript": "O protheus ajudou muito. Nosso próximo passo é contratar crm da totvs.",
+    "risk": false,
+    "upsell": true
+  },
+  {
+    "id": 19,
+    "transcript": "Se o suporte demora desse jeito sempre, nossa única saída é cancelar contrato.",
+    "risk": true,
+    "upsell": false
+  },
+  {
+    "id": 20,
+    "transcript": "Queremos automatizar o financeiro e implantar techfin o quanto antes.",
+    "risk": false,
+    "upsell": true
+  }
+]
