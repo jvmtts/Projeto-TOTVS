@@ -17,3 +17,4 @@ export default function Layout() {
     <footer className="app-footer"><span>Árion <b>/</b> FIAP × TOTVS</span><Link to="/estudo">Estudo de Data Science <ArrowUpRight size={12} /></Link><Link to="/sobre">Sobre o projeto</Link></footer>
   </div>;
 }
+
