@@ -36,6 +36,18 @@ O inicializador procura `Challenges_TOTVS_DDD` junto ao frontend ou na pasta aci
 
 Para um frontend servido sem o proxy do Vite, defina `VITE_API_URL` com a URL completa da API terminada em `/api`, antes do build, e configure a origem do frontend no CORS do backend. Nenhuma chave de IA deve ser colocada nas variáveis `VITE_*`.
 
+## Publicar na Vercel
+
+A Vercel recebe o frontend. A API Java deve estar publicada separadamente e responder `GET /api/status` por HTTPS. O proxy de `vite.config.ts` funciona apenas em desenvolvimento e preview local.
+
+1. Publique `Challenges_TOTVS_DDD` em um serviço que execute seu `Dockerfile`, com armazenamento persistente ou o Oracle configurado. Consulte o README do backend.
+2. No backend, defina `ARION_CORS_ORIGINS=https://projeto-totvs-zeta.vercel.app` e `SERVER_ADDRESS=0.0.0.0`.
+3. Na Vercel, em Settings → Environment Variables, defina `VITE_API_URL` com a URL HTTPS real do backend, incluindo `/api` no final. A variável é um endereço público; não coloque chaves de IA nela.
+4. Aplique a variável aos ambientes desejados e faça um novo deploy. O build na Vercel rejeita endereço ausente, HTTP, localhost ou endereço privado.
+5. Confirme o indicador Conectado e consulte as reuniões. Os registros do H2 local não são enviados automaticamente à hospedagem. Os exemplos recuperados estão em `database/legacy` no backend e precisam de uma importação no banco de destino.
+
+O projeto usa rotas com `#`; a página inicial de produção é `https://projeto-totvs-zeta.vercel.app/#/reunioes`. Não há rewrite para um backend fictício nem fallback para exemplos quando a conexão falha.
+
 ## Verificar
 
 ```powershell
